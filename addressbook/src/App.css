@@ -3,7 +3,68 @@
     margin: 0 auto;
 }
 
-body {
-    background-color: #f8f9fa;
+.app-wrapper {
     min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 24px 0;
+}
+
+.app-container {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.app-title {
+    color: #1976d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.app-subtitle {
+    margin-top: 8px;
+}
+
+.form-section {
+    margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-wrapper {
+        padding: 12px;
+    }
+
+    .app-container {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .app-header {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-container {
+        padding: 16px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .app-wrapper {
+        padding: 0;
+    }
 }

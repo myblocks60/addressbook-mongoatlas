@@ -1,1 +1,49 @@
-/* UserCard styles placeholder */
+.user-card {
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.user-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.user-card-actions {
+    display: flex;
+    gap: 4px;
+}
+
+.user-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.field-icon {
+    color: #757575;
+}
+
+@media (max-width: 576px) {
+    .user-card {
+        margin-bottom: 12px;
+    }
+}
