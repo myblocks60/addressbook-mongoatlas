@@ -1,7 +1,7 @@
 [build]
   base = "addressbook"
   command = "npm run build"
-  publish = "addressbook/dist"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
