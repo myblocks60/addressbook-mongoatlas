@@ -75,7 +75,7 @@ function App() {
 
     // Handle edit submit
     const handleEditSubmit = async (userData) => {
-        const result = await editUser(editingUser._id, userData);
+        const result = await editUser(editingUser._id || editingUser.id, userData);
         if (result.success) {
             setIsEditModalOpen(false);
             setEditingUser(null);

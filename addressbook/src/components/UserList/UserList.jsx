@@ -57,7 +57,7 @@ const UserList = ({ users, loading, error, onEdit, onDelete }) => {
 
             <Row className="g-3">
                 {users.map(user => (
-                    <Col key={user._id} xs={12} sm={6} lg={4}>
+                    <Col key={user._id || user.id} xs={12} sm={6} lg={4}>
                         <UserCard
                             user={user}
                             onEdit={onEdit}

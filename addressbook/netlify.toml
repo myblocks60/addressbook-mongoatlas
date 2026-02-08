@@ -5,6 +5,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  VITE_API_URL = "https://69885ba2780e8375a6881c24.mockapi.io/users"
 
 [[redirects]]
   from = "/*"

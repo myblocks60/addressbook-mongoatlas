@@ -54,7 +54,7 @@ const UserCard = ({ user, onEdit, onDelete }) => {
                             <IconButton
                                 size="small"
                                 color="error"
-                                onClick={() => onDelete(user._id)}
+                                onClick={() => onDelete(user._id || user.id)}
                                 aria-label="Delete user"
                             >
                                 <DeleteIcon fontSize="small" />

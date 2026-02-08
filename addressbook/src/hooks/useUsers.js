@@ -50,7 +50,7 @@ const useUsers = () => {
         try {
             const updatedUser = await updateUser(id, userData);
             setUsers(prev => prev.map(user =>
-                user._id === id ? updatedUser : user
+                (user._id || user.id) === id ? updatedUser : user
             ));
             return { success: true, data: updatedUser };
         } catch (err) {
@@ -70,7 +70,7 @@ const useUsers = () => {
         setError(null);
         try {
             await deleteUser(id);
-            setUsers(prev => prev.filter(user => user._id !== id));
+            setUsers(prev => prev.filter(user => (user._id || user.id) !== id));
             return { success: true };
         } catch (err) {
             const errorMsg = err.response?.data?.message || 'Failed to delete user';
